@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+lottery = "Dkt4r29UNxFWqTZCe1bHWFmn97s1KYLiabr8NNU8x3Mb"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://api.testnet.solana.com"
+wallet = "/Users/vineetkinger/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
